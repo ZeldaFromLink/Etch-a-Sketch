@@ -12,13 +12,15 @@
     <h1>Etch-a-Sketch</h1>
     <div class="header">
         <h5>Select the size</h5>
-        <button id="popup" class="btn btn-light">Select</button>
+        <button id="popup" class="btn btn-light" >Select</button>
     </div>
+    <p id="message"></p>
+    <p id="draw"></p>
     <div class="screen"></div>
     <div class="footer">
-        <button class="btn btn-dark">Black</button>
-        <button class="btn btn-warning">Random</button>
-        <button class="btn btn-secondary">Reset</button>
+        <button class="btn btn-dark" onclick="setColor('black')">Black</button>
+        <button class="btn btn-warning" onclick="setColor('random')">Random</button>
+        <button class="btn btn-secondary" onclick="resetScreen()">Reset</button>
     </div>
     <script src="main.js"></script>
 </body>
