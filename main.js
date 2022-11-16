@@ -54,8 +54,10 @@ function getSize(){
     else if (input < 1 || input > 100){
         message.innerHTML = "Provide a number between 1 and 100"
     } 
-    else{
+    else if (input >= 1 || input <= 100){
         message.innerHTML = "Play"
+    } else {
+        message.innerHTML = "Nice try! Not a number >:("
         return input;
     }
 }
