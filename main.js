@@ -48,7 +48,7 @@ function createScreen(size){
 function getSize(){
     let input = prompt("Select a size of screen.");
     let message = document.querySelector("#message");
-    if(input == "" || input !== Number){
+    if(input == ""){
         message.innerHTML = "Provide a number";
     }
     else if (input < 1 || input > 100){
